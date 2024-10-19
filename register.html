@@ -11,8 +11,8 @@
 
     <!-- NAV BAR -->
     <nav>
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="register.html" class="nav-link">Register</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="register.html" class="nav-link active">Register</a>
         <a href="login.html" class="nav-link">Login</a>
     </nav>
 
@@ -35,12 +35,22 @@
             
         </section>
 
-        <section class="content">
-            <h2>Welcome to INF16 WHATEVER</h2>
+        <section>
+            <form id="registerForm">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" required>
 
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
 
-            <button class="btn">Register</button>
-            <button class="btn">Login</button>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+
+                <label for="confirm-password">confirm-password</label>
+                <input type="password" name="confirm-password" id="confirm-password">
+
+                <button type="submit" class="btn">Register</button>
+            </form>
         </section>
 
 
